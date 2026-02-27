@@ -54,10 +54,9 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white text-lg font-heading shadow-md transition-shadow duration-300 group-hover:shadow-lg"
-                style={{ backgroundColor: "#0ADC1E" }}
-              >
-                E
+                className="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white text-lg font-heading"
+                >
+                <img src="/images/image.png" alt="Logo" />
               </div>
             </div>
             <div>

@@ -30,10 +30,9 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-white text-2xl font-heading shadow-lg"
-                style={{ backgroundColor: "#0ADC1E" }}
+                className="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-white text-2xl font-heading"
               >
-                E
+               <img src="/images/image.png" alt="Logo" />
               </div>
               <div>
                 <div className="text-white font-heading font-black text-2xl leading-none">ELINCA</div>
