@@ -10,7 +10,7 @@ export default function ContactoPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero */}
-      <section className="py-16 bg-gray-50 relative overflow-hidden">
+      {/* <section className="py-16 bg-gray-50 relative overflow-hidden">
         <div
           className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20"
           style={{ background: "radial-gradient(circle, #0ADC1E 0%, transparent 70%)" }}
@@ -30,12 +30,12 @@ export default function ContactoPage() {
             y proponer la solución más adecuada para sus necesidades.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <ContactSection />
 
       {/* Mapa */}
-      <section className="pb-20 bg-white">
+      <section className="p-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
