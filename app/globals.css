@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --font-exo2: 'Exo 2', sans-serif;
+  --font-source-sans: 'Source Sans 3', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+
+  --verde-principal: #0ADC1E;
+  --verde-oscuro: #08B819;
+  --verde-claro: #E6FDE8;
+  --gris-texto: #1A1A1A;
+  --gris-secundario: #64748B;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-source-sans);
+  background-color: #ffffff;
+  color: var(--gris-texto);
+}
+
+/* Gradient text verde */
+.gradient-text {
+  background: linear-gradient(135deg, #0ADC1E 0%, #08B819 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Nav link underline animado */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--verde-principal);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb {
+  background: var(--verde-principal);
+  border-radius: 4px;
+}
+
+/* Card hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+/* WhatsApp FAB */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* Dot grid pattern */
+.dot-grid {
+  background-image: radial-gradient(circle, #d1fae5 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Sección alternada */
+.section-light { background-color: #ffffff; }
+.section-gray  { background-color: #f8fafc; }
